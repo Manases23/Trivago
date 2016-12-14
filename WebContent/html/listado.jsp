@@ -15,7 +15,7 @@ ResultSet rs= (ResultSet) (request.getAttribute("alojamientos"));
 while(rs.next()){%>
 	
 	<p><%=rs.getString("nombre") %></p>
-	<a> <img src="img/<%= rs.getString("imagen") %>"></a>
+	<a> <img width="500" src="img/<%= rs.getString("imagen") %>"></a>
 <% 	
 }
 %>

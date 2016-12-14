@@ -37,7 +37,7 @@ public class BuscadorController extends HttpServlet {
 		ResultSet rs=null;
 		String localidad = request.getParameter("buscar");
 		
-		GestionAlojamientos.buscarLocalidad(localidad);
+		rs = GestionAlojamientos.buscarLocalidad(localidad);
 		request.setAttribute("alojamientos", rs);
 		
 		request.getRequestDispatcher("html/listado.jsp").forward(request, response);
