@@ -2,9 +2,15 @@
 	
 	 $(".buscador").hide();
 	 
-	 $("#buscadorinutil").keypress(function(){
-		 $(".buscador").show("slide")
-	  $("#buscadorinutil").hide()});
+	 $("#buscadorinutil").on('keypress', (function(){
+		 $(".buscador").show("slide");
+		 $("#buscadorinutil").hide();
+		 
+		 
+		 
+		 
+		 
+	 }));
  
  });
  

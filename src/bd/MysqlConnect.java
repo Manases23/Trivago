@@ -17,7 +17,7 @@ public final class MysqlConnect {
         String url= "jdbc:mysql://localhost:3306/";
         String dbName = "trivago";
         String driver = "com.mysql.jdbc.Driver";
-        String userName = "Manases";
+        String userName = "angelexposito";
         String password = "badajoz";
         try {
             Class.forName(driver).newInstance();

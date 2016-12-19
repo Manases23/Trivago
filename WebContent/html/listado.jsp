@@ -12,10 +12,12 @@
 <%
 ResultSet rs= (ResultSet) (request.getAttribute("alojamientos"));
 
-while(rs.next()){%>
+while(rs.next()){
+String id = rs.getString("id");
+%>
 	
 	<p><%=rs.getString("nombre") %></p>
-	<a> <img width="500" src="img/<%= rs.getString("imagen") %>"></a>
+	<a href="DetalleController?id=<%=id%>"> <img width="500" src="img/<%= rs.getString("imagen") %>"></a>
 <% 	
 }
 %>
